@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import ToDo from "./components/todoList/todo";
+
+const initialTodos = [
+    { id: 0, title: "Buy milk", done: true },
+    { id: 1, title: "Eat tacos", done: false },
+    { id: 2, title: "Brew tea", done: false },
+];
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <>
+            <ToDo initialTodos={initialTodos} />
+        </>
+    );
 }
 
 export default App;

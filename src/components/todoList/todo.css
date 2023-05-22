@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+/* li {
+    max-width: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+} */
+.addDiv {
+    padding-left: 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
